@@ -1,7 +1,7 @@
 package com.taher.book.role;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.taher.book.user;
+import com.taher.book.user.user;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;

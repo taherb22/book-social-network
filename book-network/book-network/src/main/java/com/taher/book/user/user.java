@@ -1,4 +1,4 @@
-package com.taher.book;
+package com.taher.book.user;
 
 import com.taher.book.role.Role;
 import  jakarta.persistence.*;
@@ -39,12 +39,12 @@ public class user implements UserDetails, Principal {
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Role> roles ;
 
-   @CreatedDate
-   @Column(updatable=false, nullable = false)
+    @CreatedDate
+    @Column(updatable=false, nullable = false)
     private LocalDateTime createdDate;
-   @LastModifiedDate
-   @Column(insertable = false)
-   private LocalDateTime lastModifiedDate;
+    @LastModifiedDate
+    @Column(insertable = false)
+    private LocalDateTime lastModifiedDate;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
