@@ -43,3 +43,8 @@ server:
   servlet:
     context-path: /api/v1/
 
+application :
+  security :
+    jwt:
+      secret-key : &RymwJBY@TqMZDvH
+      expiration : 864000
